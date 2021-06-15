@@ -1,3 +1,5 @@
+//Designed in Turbo C++
+
 #include <stdio.h>
 #include <conio.h>
 #include <iostream.h>
