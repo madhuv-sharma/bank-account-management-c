@@ -4,6 +4,8 @@
 #include <conio.h>
 #include <iostream.h>
 #include <stdlib.h>
+
+
 struct acc_type
 {
 	int no;
@@ -11,13 +13,15 @@ struct acc_type
 	char add[100];
 	float bal;     
 }arr[500];
+
 char ch;
 int f=0, i=0, j, n, x=0;
+
 void main()
 {
 	clrscr();
 	void view();
-	FILE *fp=fopen("C:\Users\pc\Desktop\PROGRAMMING\C\Accounts.dat","w");
+	FILE *fp=fopen("Accounts.dat","w");
 	if(fp == NULL)
     	{
         	printf("Error in creating the file\n");
@@ -162,4 +166,5 @@ void main()
 				printf("Invalid Input!");
 		}
 	}while(x!=6);
+	getch();
 }
