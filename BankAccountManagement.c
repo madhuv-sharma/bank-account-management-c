@@ -1,8 +1,5 @@
-//Designed in Turbo C++
-
-#include <stdio.h>
-#include <conio.h>
 #include <iostream.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -14,13 +11,13 @@ struct acc_type
 	float bal;     
 }arr[500];
 
+
 char ch;
 int f=0, i=0, j, n, x=0;
 
+
 void main()
 {
-	clrscr();
-	void view();
 	FILE *fp=fopen("Accounts.dat","w");
 	if(fp == NULL)
     	{
@@ -166,5 +163,4 @@ void main()
 				printf("Invalid Input!");
 		}
 	}while(x!=6);
-	getch();
 }
